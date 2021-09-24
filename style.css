@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/icon?family=Google Sans:400,500|Google Sans Display:400|Roboto:300,400,500|Roboto Mono:400");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans Display";
+    font-weight: 300;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+.header {
+    padding: 20px;
+    padding-left: 30px;
+    color: #fff;
+    background-color: #151515;
+    position: fixed;
+    width: 100%;
+}
+
+.header .logo {
+    width: 64px;
+    vertical-align: middle;
+}
+
+.header .title {
+    font-weight: 300;
+    font-size: 18pt;
+    position: relative;
+    top: 3px;
+    left: 20px;
+    display: inline-block;
+}
+
+.info-session {
+    background: #000000;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.info-session .title {
+    font-weight: 100;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.info-session .logo {
+    width: 200px;
+}
+
+.info-session .desc {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 100;
+    width: 400px;
+    color: #999;
+    margin-top: 15px;
+}
+
+.info-session .details {
+    margin-top: 50px;
+    font-size: 20pt;
+    line-height: 1.6em;
+    color: #eee;
+}
+
+.info-session .join {
+    font-size: 20pt;
+    margin-top: 80px;
+}
+
+/* .button {
+    border: 1px solid #fff;
+    padding: 15px;
+    font-size: 15pt;
+    cursor: pointer;
+    border-radius: 10px;
+} */
+
+.links {
+    margin-top: 50px;
+    
+}
+
+.link {
+    padding: 20px;
+    text-decoration: none;
+    color: #39c;
+}
+
+.link-text {
+    border-bottom: 2px #555 solid;
+    display: inline-block;
+    font-size: 20pt;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+}
+
+.link-text:hover {
+    border-bottom: 2px #fff solid;
+}
+
+.chevron {
+    color: #fff;
+    width: 8px;
+    position: relative;
+    left: 5px;
+    display: inline-block;
+    height: 8px;
+    transform: rotate(45deg);
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+
+/* .blue-signup {
+    background: #4285f4;
+    width: 280px;
+    height: 50px !important;
+    text-transform: uppercase;
+    font-size: 14pt !important;
+    font-weight: 700;
+    background: linear-gradient(30deg, rgb(41, 119, 245), rgb(41, 119, 245)) !important;
+}
+
+.red-yt {
+    background: #bb180b !important;
+    width: 280px;
+    height: 50px !important;
+    text-transform: uppercase;
+    font-size: 14pt !important;
+    font-weight: 700;
+} */
+
+/* Button styling */
+
+.pure-material-button-contained {
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.pure-material-button-contained::-moz-focus-inner {
+    border: none;
+}
+
+/* Overlay */
+
+.pure-material-button-contained::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Ripple */
+
+.pure-material-button-contained::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    padding: 50%;
+    width: 32px;
+    /* Safari */
+    height: 32px;
+    /* Safari */
+    background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 1s, transform 0.5s;
+}
+
+/* Hover, Focus */
+
+.pure-material-button-contained:hover, .pure-material-button-contained:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:hover::before {
+    opacity: 0.08;
+}
+
+.pure-material-button-contained:focus::before {
+    opacity: 0.24;
+}
+
+.pure-material-button-contained:hover:focus::before {
+    opacity: 0.3;
+}
+
+/* Active */
+
+.pure-material-button-contained:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:active::after {
+    opacity: 0.32;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0s;
+}
+
+/* Disabled */
+
+.pure-material-button-contained:disabled {
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+    box-shadow: none;
+    cursor: initial;
+}
+
+.pure-material-button-contained:disabled::before {
+    opacity: 0;
+}
+
+.pure-material-button-contained:disabled::after {
+    opacity: 0;
+}
