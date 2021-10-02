@@ -16,7 +16,6 @@ CDown.prototype = {
 		if(this.state==0) this.init();
 	},
 	expire: function(idxs){
-        window.location.href="https://www.youtube.com/watch?v=KrX1wUKL_Rc"
 		// for(var x in idxs) {
 		// 	this.display(this.counts[idxs[x]], "Now!");
 		// 	this.counts.splice(idxs[x], 1);
